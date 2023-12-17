@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('foto.png.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+.sci {
+    position: relative;
+    display: flex;
+    list-style: none;
+}
+
+.sco li {
+    list-style: none;
+    margin: 8%;
+}
+
+.sci li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 75px;
+    overflow: hidden;
+}
+
+.sci li a i {
+    font-size: 30px;
+    color: #fff;
+    line-height: 40px;
+    transform: translateY(0);
+    transition: .3s;
+}
+
+.sci li:hover a i {
+    transform: translateY(-100%);
+}
+
+.sci li a i::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+}
+
+.sci li:nth-child(1) a i::after {
+    content: '\f232';
+    color: green;
+}
+
+.sci li:nth-child(2) a i::after {
+    content: '\f16d';
+    color: #c32aa3;
+}
+
+.sci li:nth-child(3) a i::after {
+    content: '\e07b';
+    color: black;
+}
+
+.sci li:nth-child(4) a i::after {
+    content: '\f167';
+    color: #f00;
+}
